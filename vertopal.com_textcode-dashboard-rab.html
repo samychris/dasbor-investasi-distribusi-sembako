@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>4af503580dfb42dab40ab44cb3ba4c20</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+&lt;!DOCTYPE html&gt;
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+Dasbor Investasi: Distribusi Minyak &amp; Gula
+</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Chosen Palette: Gojek Inspired (Dominant Green, Neutrals, Gradient Accents) -->
+<!-- Application Structure Plan: A mobile-first, single-page dashboard using a card-based layout inspired by Gojek's UI. The flow guides the user from a high-level opportunity summary to detailed financial projections and a clear investor return calculation. This structure is chosen over a linear report to make key data points immediately accessible and digestible, encouraging exploration through interactive toggles and charts rather than passive reading. -->
+<!-- Visualization & Content Choices:
+        - Report Info: Perbandingan Laba Kotor Minyak vs. Gula. Goal: Compare. Viz/Method: Interactive Donut Chart (Chart.js/Canvas). Interaction: Static display for immediate comparison. Justification: Instantly visualizes that sugar is the higher-margin product, a key insight from the report.
+        - Report Info: Rincian RAB (Minyak & Gula). Goal: Inform. Viz/Method: Clean, responsive HTML tables. Interaction: Toggled visibility via buttons. Justification: Presents detailed data clearly and concisely, fulfilling a core requirement.
+        - Report Info: Komposisi Laba Kotor (Biaya Operasional vs. Laba Bersih). Goal: Organize/Inform. Viz/Method: Horizontal Stacked Bar Chart (Chart.js/Canvas). Interaction: Static. Justification: Clearly illustrates the breakdown of gross profit into costs and net profit, which is fundamental to understanding profitability.
+        - Report Info: Skema Bagi Hasil. Goal: Inform. Viz/Method: Styled HTML cards with prominent numbers. Interaction: Static. Justification: Clearly and directly communicates the most important number for an investor: their potential return. Icons (Unicode) will be used to enhance visual appeal.
+    --> <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background-image: linear-gradient(to right, #0052D4, #65C7F7, #F5A623, #F76B1C);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .gojek-green { background-color: #00AA13; }
+        .gojek-green-text { color: #00AA13; }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 40vh;
+        }
+        @media (min-width: 768px) {
+            .chart-container { height: 350px; }
+        }
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        table { width: 100%; }
+        th, td { white-space: nowrap; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<pre><code>&lt;div class=&quot;container mx-auto p-4 md:p-8 max-w-5xl&quot;&gt;
+
+    &lt;header class=&quot;text-center mb-12&quot;&gt;
+        &lt;h1 class=&quot;text-3xl md:text-5xl font-bold mb-4 gradient-text&quot;&gt;Peluang Investasi Distribusi&lt;/h1&gt;
+        &lt;p class=&quot;text-base md:text-lg text-gray-600&quot;&gt;Proyeksi Laba dari Distribusi Minyak Goreng &amp; Gula Pasir di Surabaya&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;section id=&quot;ringkasan&quot; class=&quot;mb-12&quot;&gt;
+         &lt;div class=&quot;grid grid-cols-1 md:grid-cols-3 gap-4 text-center&quot;&gt;
+            &lt;div class=&quot;bg-white p-6 rounded-xl shadow-md&quot;&gt;
+                &lt;h3 class=&quot;text-sm font-semibold text-gray-500 mb-2&quot;&gt;MODAL INVESTASI&lt;/h3&gt;
+                &lt;p class=&quot;text-2xl font-bold gojek-green-text&quot;&gt;Rp 100 Juta&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bg-white p-6 rounded-xl shadow-md&quot;&gt;
+                &lt;h3 class=&quot;text-sm font-semibold text-gray-500 mb-2&quot;&gt;ESTIMASI LABA BERSIH/BULAN&lt;/h3&gt;
+                &lt;p class=&quot;text-2xl font-bold gojek-green-text&quot;&gt;Rp 11,5 Juta&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bg-white p-6 rounded-xl shadow-md&quot;&gt;
+                &lt;h3 class=&quot;text-sm font-semibold text-gray-500 mb-2&quot;&gt;BAGI HASIL INVESTOR (70%)&lt;/h3&gt;
+                &lt;p class=&quot;text-2xl font-bold gojek-green-text&quot;&gt;~ Rp 8,1 Juta&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section id=&quot;proyeksi&quot; class=&quot;mb-12&quot;&gt;
+        &lt;div class=&quot;bg-white p-6 rounded-xl shadow-md&quot;&gt;
+            &lt;h2 class=&quot;text-2xl font-bold mb-2 gradient-text&quot;&gt;Proyeksi Keuangan Bulanan&lt;/h2&gt;
+            &lt;p class=&quot;text-sm text-gray-600 mb-6&quot;&gt;Analisis potensi pendapatan kotor dari setiap produk. Gula pasir menunjukkan margin keuntungan yang lebih tinggi secara signifikan.&lt;/p&gt;
+            
+            &lt;div class=&quot;chart-container mb-8&quot;&gt;
+                &lt;canvas id=&quot;profitContributionChart&quot;&gt;&lt;/canvas&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+                &lt;div class=&quot;flex justify-center mb-4 space-x-2&quot;&gt;
+                    &lt;button id=&quot;btnMinyak&quot; class=&quot;gojek-green text-white font-semibold py-2 px-4 rounded-lg shadow transition-transform transform hover:scale-105&quot;&gt;RAB Minyak Goreng&lt;/button&gt;
+                    &lt;button id=&quot;btnGula&quot; class=&quot;bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow transition-transform transform hover:scale-105&quot;&gt;RAB Gula Pasir&lt;/button&gt;
+                &lt;/div&gt;
+                
+                &lt;div id=&quot;rabMinyak&quot; class=&quot;table-container&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;rabGula&quot; class=&quot;hidden table-container&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section id=&quot;breakdown&quot; class=&quot;mb-12&quot;&gt;
+        &lt;div class=&quot;bg-white p-6 rounded-xl shadow-md&quot;&gt;
+            &lt;h2 class=&quot;text-2xl font-bold mb-2 gradient-text&quot;&gt;Alokasi Laba Kotor&lt;/h2&gt;
+             &lt;p class=&quot;text-sm text-gray-600 mb-6&quot;&gt;Visualisasi bagaimana laba kotor dialokasikan untuk biaya operasional dan keuntungan bersih yang siap didistribusikan.&lt;/p&gt;
+            &lt;div class=&quot;chart-container&quot;&gt;
+                &lt;canvas id=&quot;profitBreakdownChart&quot;&gt;&lt;/canvas&gt;
+            &lt;/div&gt;
+             &lt;div class=&quot;mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm&quot;&gt;
+                &lt;div class=&quot;bg-gray-100 p-4 rounded-lg&quot;&gt;
+                    &lt;h4 class=&quot;font-bold&quot;&gt;Total Laba Kotor&lt;/h4&gt;
+                    &lt;p class=&quot;text-lg font-semibold gojek-green-text&quot;&gt;Rp 25.584.000&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;bg-gray-100 p-4 rounded-lg&quot;&gt;
+                    &lt;h4 class=&quot;font-bold&quot;&gt;Total Biaya Operasional&lt;/h4&gt;
+                    &lt;p class=&quot;text-lg font-semibold text-red-600&quot;&gt;(Rp 14.000.000)&lt;/p&gt;
+                     &lt;ul class=&quot;text-xs text-gray-600 mt-2 list-disc list-inside&quot;&gt;
+                        &lt;li&gt;Logistik &amp; Transportasi: Rp 3.000.000&lt;/li&gt;
+                        &lt;li&gt;Gudang &amp; Inventaris: Rp 5.000.000&lt;/li&gt;
+                        &lt;li&gt;Gaji Karyawan: Rp 3.500.000&lt;/li&gt;
+                        &lt;li&gt;Utilitas &amp; Lainnya: Rp 2.500.000&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;section id=&quot;bagi-hasil&quot; class=&quot;mb-12 text-center&quot;&gt;
+        &lt;h2 class=&quot;text-2xl font-bold mb-4 gradient-text&quot;&gt;Simulasi Bagi Hasil Investor&lt;/h2&gt;
+        &lt;p class=&quot;text-sm text-gray-600 max-w-2xl mx-auto mb-6&quot;&gt;Dengan skema bagi hasil 70/30 yang transparan, berikut adalah estimasi keuntungan bulanan yang akan Anda terima berdasarkan proyeksi laba bersih.&lt;/p&gt;
+        &lt;div class=&quot;grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto&quot;&gt;
+            &lt;div class=&quot;bg-white p-8 rounded-xl shadow-lg border-2 border-green-500&quot;&gt;
+                &lt;h3 class=&quot;font-bold text-lg mb-2&quot;&gt;💰 Bagian Anda (Investor)&lt;/h3&gt;
+                &lt;p class=&quot;text-sm text-gray-500 mb-4&quot;&gt;70% dari Laba Bersih&lt;/p&gt;
+                &lt;p class=&quot;text-4xl font-bold gojek-green-text&quot;&gt;Rp 8.108.800&lt;/p&gt;
+                &lt;p class=&quot;text-xs text-gray-500 mt-2&quot;&gt;per bulan&lt;/p&gt;
+            &lt;/div&gt;
+             &lt;div class=&quot;bg-white p-8 rounded-xl shadow-md&quot;&gt;
+                &lt;h3 class=&quot;font-bold text-lg mb-2&quot;&gt;⚙️ Bagian Pengelola&lt;/h3&gt;
+                &lt;p class=&quot;text-sm text-gray-500 mb-4&quot;&gt;30% dari Laba Bersih&lt;/p&gt;
+                &lt;p class=&quot;text-3xl font-bold text-gray-700&quot;&gt;Rp 3.475.200&lt;/p&gt;
+                 &lt;p class=&quot;text-xs text-gray-500 mt-2&quot;&gt;per bulan&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;footer class=&quot;text-center pt-8&quot;&gt;
+         &lt;h3 class=&quot;text-xl font-bold mb-4 gradient-text&quot;&gt;Siap Menjadi Mitra Kami?&lt;/h3&gt;
+        &lt;p class=&quot;text-gray-600 mb-6&quot;&gt;Hubungi kami untuk mendapatkan proposal lengkap dan mendiskusikan peluang investasi yang stabil dan menguntungkan ini.&lt;/p&gt;
+        &lt;a href=&quot;mailto:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="20494e56455354604449535452494255534953454d42414b4f0e434f4d">[email&#160;protected]</a>&quot; class=&quot;gojek-green text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 inline-block&quot;&gt;Hubungi Kami via Email&lt;/a&gt;
+    &lt;/footer&gt;
+
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
+        const data = {
+            minyak: {
+                name: &#39;Minyak Goreng&#39;,
+                modal: 50000000,
+                kuantitas: &#39;2.500 Liter&#39;,
+                hargaBeli: 20000,
+                hargaJual: 22000,
+                pendapatanKotor: 55000000,
+                labaKotor: 5000000,
+                unit: &#39;Liter&#39;
+            },
+            gula: {
+                name: &#39;Gula Pasir&#39;,
+                modal: 50000000,
+                kuantitas: &#39;5.882 Kg&#39;,
+                hargaBeli: 8500,
+                hargaJual: 12000,
+                pendapatanKotor: 70584000,
+                labaKotor: 20584000,
+                unit: &#39;Kg&#39;
+            },
+            operasional: 14000000
+        };
+
+        const formatRupiah = (number) =&gt; {
+            return new Intl.NumberFormat(&#39;id-ID&#39;, { style: &#39;currency&#39;, currency: &#39;IDR&#39;, minimumFractionDigits: 0 }).format(number);
+        };
+        
+        const createTable = (productData) =&gt; {
+            return `
+            &lt;table class=&quot;min-w-full text-xs md:text-sm bg-white divide-y divide-gray-200&quot;&gt;
+                &lt;thead class=&quot;bg-gray-50&quot;&gt;
+                    &lt;tr&gt;
+                        &lt;th class=&quot;px-4 py-2 text-left font-semibold text-gray-600&quot;&gt;Deskripsi&lt;/th&gt;
+                        &lt;th class=&quot;px-4 py-2 text-right font-semibold text-gray-600&quot;&gt;Jumlah&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody class=&quot;divide-y divide-gray-200&quot;&gt;
+                    &lt;tr&gt;&lt;td class=&quot;px-4 py-2 font-bold text-gray-800&quot; colspan=&quot;2&quot;&gt;Rencana Anggaran Biaya (RAB)&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td class=&quot;px-4 py-2 text-gray-600&quot;&gt;Modal Pembelian&lt;/td&gt;&lt;td class=&quot;px-4 py-2 text-right font-medium&quot;&gt;${formatRupiah(productData.modal)}&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td class=&quot;px-4 py-2 text-gray-600&quot;&gt;Kuantitas Pembelian&lt;/td&gt;&lt;td class=&quot;px-4 py-2 text-right font-medium&quot;&gt;${productData.kuantitas}&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td class=&quot;px-4 py-2 text-gray-600&quot;&gt;Harga Beli Satuan&lt;/td&gt;&lt;td class=&quot;px-4 py-2 text-right font-medium&quot;&gt;${formatRupiah(productData.hargaBeli)} / ${productData.unit}&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td class=&quot;px-4 py-2 font-bold text-gray-800&quot; colspan=&quot;2&quot;&gt;Proyeksi Penjualan&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td class=&quot;px-4 py-2 text-gray-600&quot;&gt;Harga Jual Satuan&lt;/td&gt;&lt;td class=&quot;px-4 py-2 text-right font-medium&quot;&gt;${formatRupiah(productData.hargaJual)} / ${productData.unit}&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td class=&quot;px-4 py-2 text-gray-600&quot;&gt;Estimasi Pendapatan&lt;/td&gt;&lt;td class=&quot;px-4 py-2 text-right font-medium&quot;&gt;${formatRupiah(productData.pendapatanKotor)}&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr class=&quot;bg-green-50&quot;&gt;&lt;td class=&quot;px-4 py-2 font-bold gojek-green-text&quot;&gt;Estimasi Laba Kotor&lt;/td&gt;&lt;td class=&quot;px-4 py-2 text-right font-bold gojek-green-text&quot;&gt;${formatRupiah(productData.labaKotor)}&lt;/td&gt;&lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            `;
+        };
+
+        const rabMinyakContainer = document.getElementById(&#39;rabMinyak&#39;);
+        const rabGulaContainer = document.getElementById(&#39;rabGula&#39;);
+        rabMinyakContainer.innerHTML = createTable(data.minyak);
+        rabGulaContainer.innerHTML = createTable(data.gula);
+
+        const btnMinyak = document.getElementById(&#39;btnMinyak&#39;);
+        const btnGula = document.getElementById(&#39;btnGula&#39;);
+
+        btnMinyak.addEventListener(&#39;click&#39;, () =&gt; {
+            rabMinyakContainer.classList.remove(&#39;hidden&#39;);
+            rabGulaContainer.classList.add(&#39;hidden&#39;);
+            btnMinyak.classList.add(&#39;gojek-green&#39;, &#39;text-white&#39;);
+            btnMinyak.classList.remove(&#39;bg-gray-200&#39;, &#39;text-gray-700&#39;);
+            btnGula.classList.add(&#39;bg-gray-200&#39;, &#39;text-gray-700&#39;);
+            btnGula.classList.remove(&#39;gojek-green&#39;, &#39;text-white&#39;);
+        });
+        
+        btnGula.addEventListener(&#39;click&#39;, () =&gt; {
+            rabGulaContainer.classList.remove(&#39;hidden&#39;);
+            rabMinyakContainer.classList.add(&#39;hidden&#39;);
+            btnGula.classList.add(&#39;gojek-green&#39;, &#39;text-white&#39;);
+            btnGula.classList.remove(&#39;bg-gray-200&#39;, &#39;text-gray-700&#39;);
+            btnMinyak.classList.add(&#39;bg-gray-200&#39;, &#39;text-gray-700&#39;);
+            btnMinyak.classList.remove(&#39;gojek-green&#39;, &#39;text-white&#39;);
+        });
+
+        const totalLabaKotor = data.minyak.labaKotor + data.gula.labaKotor;
+        const labaBersih = totalLabaKotor - data.operasional;
+        
+        const profitContributionCtx = document.getElementById(&#39;profitContributionChart&#39;).getContext(&#39;2d&#39;);
+        new Chart(profitContributionCtx, {
+            type: &#39;doughnut&#39;,
+            data: {
+                labels: [&#39;Laba Kotor Gula Pasir&#39;, &#39;Laba Kotor Minyak Goreng&#39;],
+                datasets: [{
+                    data: [data.gula.labaKotor, data.minyak.labaKotor],
+                    backgroundColor: [&#39;#00AA13&#39;, &#39;#F76B1C&#39;],
+                    borderColor: &#39;#FFFFFF&#39;,
+                    borderWidth: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: &#39;bottom&#39;, labels: { font: { size: 12 } } },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || &#39;&#39;;
+                                if (label) {
+                                    label += &#39;: &#39;;
+                                }
+                                if (context.parsed !== null) {
+                                    label += formatRupiah(context.parsed);
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                },
+                cutout: &#39;60%&#39;
+            }
+        });
+
+        const profitBreakdownCtx = document.getElementById(&#39;profitBreakdownChart&#39;).getContext(&#39;2d&#39;);
+        new Chart(profitBreakdownCtx, {
+            type: &#39;bar&#39;,
+            data: {
+                labels: [&#39;Alokasi&#39;],
+                datasets: [
+                    {
+                        label: &#39;Laba Bersih&#39;,
+                        data: [labaBersih],
+                        backgroundColor: &#39;#00AA13&#39;,
+                        borderColor: &#39;#FFFFFF&#39;,
+                        borderWidth: 2
+                    },
+                    {
+                        label: &#39;Biaya Operasional&#39;,
+                        data: [data.operasional],
+                        backgroundColor: &#39;#FDB44B&#39;,
+                        borderColor: &#39;#FFFFFF&#39;,
+                        borderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                indexAxis: &#39;y&#39;,
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { stacked: true, ticks: { callback: (value) =&gt; formatRupiah(value) } },
+                    y: { stacked: true, display: false }
+                },
+                plugins: {
+                    legend: { position: &#39;bottom&#39;, labels: { font: { size: 12 } } },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || &#39;&#39;;
+                                if (label) {
+                                    label += &#39;: &#39;;
+                                }
+                                if (context.parsed.x !== null) {
+                                    label += formatRupiah(context.parsed.x);
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+    });
+&lt;/script&gt;</code></pre>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"95afd7498dfb5ff7","version":"2025.6.2","r":1,"token":"0357a45f23a943f08700f7f9af191ee6","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+</body>
+</html>
+</body>
+</html>
